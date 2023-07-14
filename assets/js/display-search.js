@@ -17,5 +17,3 @@ async function fetchCocktails() {
 // Call the function to initiate the API fetch
 fetchCocktails();
 
-
-
