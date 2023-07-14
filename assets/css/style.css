@@ -1,0 +1,6 @@
+.text-primary{
+    display: flexbox;
+    align-items: center;
+    background-color: aqua;
+    color: bisque;
+}
