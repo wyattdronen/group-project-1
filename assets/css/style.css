@@ -1,6 +1,7 @@
 .text-primary{
     display: flexbox;
     align-items: center;
+  
     background-color: #208dd7;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -117,4 +118,5 @@ body {
 }
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+
 }
