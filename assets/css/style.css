@@ -1,8 +1,122 @@
 .text-primary{
     display: flexbox;
     align-items: center;
-    background-color: aqua;
-    color: bisque;
-    justify-content: center;
-    
+  
+    background-color: #208dd7;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../css/beverages.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(85%);
+  }
+  
+  
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: left;
+    align-items: left;
+  }
+  .hero-content {
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: left;
+    margin: 1.625rem;
+  }
+  .hero.title {
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 0;
+   
+  }
+  .hero-subtitle {
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 1rem;
+  }
+  .hero-button {
+    background-color: #208dd7;
+    color: white;
+    border: 1px solid black;
+    margin-top: 5rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 200;
+    cursor: pointer;
+  }
+  .hero-button:hover{
+    background-color: #20d7c6;
+    border: 1px solid black;
+  }
+  .custom-select{
+    /*position:relative;*/
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  .custom-select select {
+    display: none;
+  }
+  .select-selected {
+    background-color: #20d7c6;
+  }
+  .select-selected:after{
+    /*position: relative;*/
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+  .select-selected.select-arrow-active:after{
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+  .select-items div,.select-selected{
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba (0, 0. 0, 0.1) transparent;
+    cursor: pointer;
+  }
+  .select-items {
+    position: relative;
+    background-color: #20d7c6;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+
 }
