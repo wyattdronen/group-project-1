@@ -5,35 +5,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cocktail Generator</title>
+  <title>Cocktail Hour</title>
   
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <div class="flex-row align-center justify-center min-100-vh bg-primary">
-    <div class="col-12 col-md-9 flex-column align-center bg-light p-5">
-      <h1 class="text-primary"> Cocktail Generator</h1>
-      <form id="search-form" class="form w-100">
-        <input id="search-input" class="form-input w-100" type="text" placeholder="Search!">
-        <select id="format-input" class="form-input w-100">
-          <option value="" disabled selected>Choose a booze...</option>
-          <option value="a">Vodka</option>
-          <option value="b">Gin</option>
-          <option value="c">Tequila/Mezcal</option>
-          <option value="d">Whiskey/Bourbon/Scotch</option>
-          <option value="e">Amaro/Vermouth</option>
-          <option value="f">Spirits</option>
-          <option value="g">Surprise Me!</option>
-        </select>
-
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Cocktail Hour
+      </h1>
+      <h3 class="hero-subtitle">
+        What are you thirsty for?
+      </h3>
+      <form class="custom-select" style="width:200px;"> 
+          <select>
+            <option value="0">Choose a Booze:</option>
+            <option value="1">Vodka</option>
+            <option value="2">Gin</option>
+            <option value="3">Tequila/Mezcal</option>
+            <option value="4">Whiskey/Bourbon/Scotch</option>
+            <option value="5">Amaretto/Vermouth</option>
+            <option value="6">Spirits</option>
+            <option value="7">Surprise Me!</option>
+          </select>
       </form>
-
-      <button class="btn btn-info btn-block" type="button" id="search-btn">Shake!</button>
-
+    
+  
+      <button type="button" class="hero-button" onclick="location.href='index.html'">
+        Search &raquo;
+      </button>
     </div>
-  </div>
+  </section>
 
+  
   <script src="./assets/js/script.js"></script>
 
 </body>
