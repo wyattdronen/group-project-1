@@ -1,19 +1,25 @@
-async function fetchCocktails() {
-  const url = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail";
+var resultTextEl = document.querySelector('result-text');
+var resultContentEl = document.querySelector('result-content');
+var searchFormEl = document.querySelector('search-form');
 
-  try {
-    const response = await fetch(url);
-    const data = await response.json();
+const userCardTemplate = document.querySelector("[data-user-template]")
+const UserCardContainer = document.querySelector("[data-user-cards-container]")
 
-    // Process the received data here
-    console.log(data);
-    // You can do further operations with the data, such as displaying it on a webpage or manipulating it as needed.
-  } catch (error) {
-    console.log("Error:", error);
-    // Handle the error gracefully, such as displaying an error message to the user.
-  }
-}
+fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Cocktail")
+  .then(res => res.json())
+  .then(data => {
+    data.forEach(user => {
+      const card = userCardTemplate.content.cloneNode(true).children[0]
+      console.log(user)
 
-// Call the function to initiate the API fetch
-fetchCocktails();
+      const header = card.querySelector("[data-cocktail]")
+      const body = card.querySelector("[data-directions]")
+      header.textContent = cocktail.name
+      header.textContent = cocktail.directions
+      cocktailCardContainer.append(card)
+
+    })
+  })
+
+
 
