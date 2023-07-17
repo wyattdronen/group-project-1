@@ -1,4 +1,3 @@
-//<<<<<<< HEAD
 // Event listener for when the user clicks on the search button
 $("#search-btn").on('click', function (event) {
     event.preventDefault();
@@ -22,5 +21,3 @@ $("#search-input").on("keyup", function (event) {
   
     };
   });
-  
-//>>>>>>> main
