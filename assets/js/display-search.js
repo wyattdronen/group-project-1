@@ -8,21 +8,15 @@ var searchFormEl = document.querySelector('search-form');
 
 
 
-var endpoint = "https://thecocktaildb.com/api/json/v1/1/random.php"
+var requestUrl = "https://thecocktaildb.com/api/json/v1/1/random.php"
 
 $.ajax({
-  url: requestUrl + $(this).text(),
+  url: requestUrl,
   method: 'GET',
-  contentType: "application/json",
-  dataType: 'json',
-  sucess: function (results) {
-    console.log(result)
-})
-// }).then(function (response) {
-//   console.log('Ajax Reponse \n-------------');
-//   console.log(response);
-// });
-
+}).then(function (response) {
+  console.log('Ajax Reponse \n-------------');
+  console.log(response);
+});
 
 
 //  $.getJSON("https://https://thecocktaildb.com/api/json/v1/1/random.php", function (data) {
