@@ -49,7 +49,7 @@ body {
     margin: 1.625rem;
   }
   .hero.title {
-    font-size: 72px;
+    font-size: 96px;
     font-weight: 600;
     margin-bottom: 0;
    
@@ -75,8 +75,8 @@ body {
     border: 1px solid black;
   }
   .custom-select{
-    /*position:relative;*/
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    position:relative;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
   .custom-select select {
     display: none;
@@ -85,7 +85,7 @@ body {
     background-color: #20d7c6;
   }
   .select-selected:after{
-    /*position: relative;*/
+    position: relative;
     content: "";
     top: 14px;
     right: 10px;
