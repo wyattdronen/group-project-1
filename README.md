@@ -66,3 +66,5 @@ To deploy this project run
 
 A palette generator was used to extract the hex values of the main colors in the hero image.  At the time of this writing the particular palette generator used showed up as a non-secured website so the web address will not be included in this documentation.  After the hex values were retrieved, colorhexa.com was used to retrieve the hex values of the complementary colors of the main colors.  The complementary colors were used in the styling.
 
+Background hero image is from Shutterstock.
+
