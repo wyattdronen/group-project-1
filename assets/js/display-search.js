@@ -6,6 +6,7 @@ var fetchButton = document.getElementById('search-button');
 
 
 
+
 var requestUrl = 'https://thecocktaildb.com/api/json/v1/1/random.php';
 
 fetch(requestUrl)
@@ -16,19 +17,36 @@ fetch(requestUrl)
     const drinkName = data.drinks[0].strDrink;
     const drinkInst = data.drinks[0].strInstructions;
     const drinkImage = data.drinks[0].strDrinkThumb
-    const IngredientOne = data.drinks[0].strIngredient1;
-    const IngredientTwo = data.drinks[0].strIngredient2;
-    const IngredientThree = data.drinks[0].strIngredient3;
-    const IngredientFour = data.drinks[0].strIngredient4;
-    const IngredientFive = data.drinks[0].strIngredient5;
+    const ingredientOne = data.drinks[0].strIngredient1;
+    const ingredientTwo = data.drinks[0].strIngredient2;
+    const ingredientThree = data.drinks[0].strIngredient3;
+    const ingredientFour = data.drinks[0].strIngredient4;
+    const ingredientFive = data.drinks[0].strIngredient5;
+    const ingredientSix = data.drinks[0].strIngredient6;
+    const ingredientSeven = data.drinks[0].strIngredient7;
+    const measureOne = data.drinks[0].strMeasure1;
+    const measureTwo = data.drinks[0].strMeasure2;
+    const measureThree = data.drinks[0].strMeasure3;
+    const measureFour = data.drinks[0].strMeasure4;
+    const measureFive = data.drinks[0].strMeasure5;
+    const measureSix = data.drinks[0].strMeasure6;
+    const measureSeven = data.drinks[0].strMeasure7;
+
 
 
     console.log(drinkName)
     console.log(drinkInst)
     console.log(drinkImage)
-    console.log((IngredientOne + " " + IngredientTwo + " " + IngredientThree + " " + IngredientFour + " " + IngredientFive))
+    console.log((ingredientOne + " " + ingredientTwo + " " + ingredientThree + " " + ingredientFour + " " + ingredientFive + " " + ingredientSix + " " + ingredientSeven));
 
+
+    document.getElementById("drink-result").innerHTML = drinkName;
+    document.getElementById('ingredients').innerHTML = (measureOne + ingredientOne + " " + measureTwo + ingredientTwo + " " + measureThree + ingredientThree + " " + measureFour + ingredientFour + " " + measureFive + ingredientFive + " " + measureSix + ingredientSix + " " + measureSeven + ingredientSeven);
+    document.getElementById("method").innerHTML = drinkInst;
+    // document.getElementById("hero").innerHTMl = drinkImage;
   })
+
+
     //create elements
     const drinkNameEl = document.createElement('h2');
     const drinkInstEl = document.createElement('p');
@@ -83,14 +101,23 @@ $("#add-to-favourites").on('click', function () {
 
 
 
+//create elements
+// const drinkNameEl = document.createElement('h2');
+// const drinkInstEl = document.createElement('p');
+// //set text of elements
+// drinkNameEl.textContent = Data.drinks[0].strDrink;
+// drinkInstEl.textContent = Data.drinks[0].strInstructions;
+=======
+
+
 //         //Appending the dynamically generated html to the div associated with the id="users"
 //         //Append will attach the element as the bottom most child.
 //         usersContainer.append(userName);
 //         usersContainer.append(userUrl);
 //       }
-    // });
+// });
 // }
-// fetchButton.addEventListener('click', getApi);
+fetchButton.addEventListener('click', fetch(requestUrl));
 
 
 
