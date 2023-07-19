@@ -130,4 +130,5 @@ body {
 #home-button:hover{
   background-color: #20d7c6;
   border: 1px solid black;
+  cursor: pointer;
 }
