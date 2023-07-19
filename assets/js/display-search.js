@@ -47,6 +47,58 @@ fetch(requestUrl)
   })
 
 
+    //create elements
+    const drinkNameEl = document.createElement('h2');
+    const drinkInstEl = document.createElement('p');
+    //set text of elements
+    drinkNameEl.textContent = Data.drinks[0].strDrink;
+    drinkInstEl.textContent = Data.drinks[0].strInstructions;
+
+    
+
+    // Making function for the copy icon to copy recipe
+    function copyRecipe() {
+      var textCopy = document.getElementById("ingredients").innerText;
+      var textElem = document.createElement("textarea");
+      document.body.appendChild(textElem);
+      textElem.value = textCopy;
+      textElem.select();
+
+      if (navigator.clipboard) {
+          navigator.clipboard.writeText(textCopy).then(() => {
+              //alert("Copied!"); // for checking if it works? /
+              //!make a modal???("Copied!");
+          })
+      } else {
+          console.log("Browser not compatible") // for checking if errors
+      }
+    };
+
+$("#add-to-favourites").on('click', function () {
+      // Validation to stop the user adding multiples of the same cocktail
+      if (!storageArray.includes(cocktailDataObject[0].name)) {
+          // Pushes current cocktail to empty array (storageArray)
+          storageArray.push(cocktailDataObject[0].name);
+          //Sets index of storage array to memory
+          localStorage.setItem("Favourites", JSON.stringify(storageArray));
+          //Appends to page
+          $("#favourite-cocktails").append(`<li>${cocktailDataObject[0].name}</li>`);
+      } else {
+          console.log("You already have this saved");
+      };
+});
+
+// Button to clear all favourites
+  $("#delete-favourites").on('click', function () {
+    localStorage.removeItem("Favourites");
+    location.reload();
+  });
+
+
+
+
+
+
 
 
 //create elements
@@ -55,6 +107,8 @@ fetch(requestUrl)
 // //set text of elements
 // drinkNameEl.textContent = Data.drinks[0].strDrink;
 // drinkInstEl.textContent = Data.drinks[0].strInstructions;
+=======
+
 
 //         //Appending the dynamically generated html to the div associated with the id="users"
 //         //Append will attach the element as the bottom most child.
