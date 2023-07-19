@@ -1,4 +1,4 @@
-var searchFormEl = document.querySelector('#search-form');
+/*var searchFormEl = document.querySelector('#search-form');
 
 function handleSearchFormSubmit(event) {
   event.preventDefault();
@@ -31,7 +31,7 @@ $("#search-btn").on('click', function (event) {
   // Calls the above function using the users input
   getCocktail(cocktailName);
 });
-// Added a keyup event listener so the user can enter a cocktail and press enter on the keyboard instead of clicking the button
+ // Added a keyup event listener so the user can enter a cocktail and press enter on the keyboard instead of clicking the button
 $("#search-input").on("keyup", function (event) {
   if (event.keyCode === 13) {
 
@@ -64,4 +64,4 @@ $("#search-input").on("keyup", function (event) {
   
     };
   });
-
+*/
