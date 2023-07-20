@@ -185,28 +185,22 @@ function replaceDrink() {
   }
 }
 
-// get favorites from local storage or empty array
-var favorites = JSON.parse(localStorage.getItem('drinks')) || [];
-// add class 'fav' to each favorite
-favorites.forEach(function(drink) {
-  document.getElementById(favorite).className = 'fav';
-});
-// register click event listener
-document.querySelector('#favorite').addEventListener('click', function(e) {
-  var id = e.target.id,
-      item = e.target,
-      index = favorites.indexOf(id);
-  // return if target doesn't have an id (shouldn't happen)
-  if (!id) return;
-  // item is not favorite
-  if (index == -1) {
-    favorites.push(id);
-    item.className = 'fav';
-  // item is already favorite
+$("#favorites").on('click', function () {
+  // Validation to stop the user adding multiples of the same cocktail
+  if (!storageArray.includes(cocktailDataObject[0].name)) {
+      // Pushes current cocktail to empty array (storageArray)
+      storageArray.push(cocktailDataObject[0].name);
+      //Sets index of storage array to memory
+      localStorage.setItem("Favorites", JSON.stringify(storageArray));
+      //Appends to page
+      $("#favorite-cocktails").append(`<li>${cocktailDataObject[0].name}</li>`);
   } else {
-    favorites.splice(index, 1);
-    item.className = '';
-  }
-  // store array in local storage
-  localStorage.setItem('favorites', JSON.stringify(favorites));
+      console.log("You already have this saved");
+  };
+});
+
+// Button to clear all favorites
+$("#delete-favorites").on('click', function () {
+  localStorage.removeItem("Favourites");
+  location.reload();
 });
