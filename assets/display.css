@@ -2,9 +2,7 @@
   display: flexbox;
   align-items: center;
 
-  /*background-color: #208dd7;*/
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 body {
   margin: 0;
@@ -18,6 +16,8 @@ body {
   justify-content: left;
   align-items: left;
 }
+  /*to hide hero image on results page*/
+
 .hero::before {
   content: "";
   position: absolute;
@@ -146,9 +146,9 @@ body {
     background-color: black;
     color: white;
   }
-  /*.header{
+  .header{
     .header-content
-  }*/
+  }
   .section {
     position: relative;
     width: 100vw;
@@ -157,7 +157,7 @@ body {
     justify-content: left;
     align-items: left;
   }
-  /*.hero::before {
+  .hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -212,7 +212,7 @@ body {
   .hero-button:hover{
     background-color: #20d7c6;
     border: 1px solid black;
-  }*/
+  }
 
   .custom-select{
     position:relative;
