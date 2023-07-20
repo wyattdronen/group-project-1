@@ -45,11 +45,13 @@ fetch(requestUrl)
     console.log(drinkImage)
     console.log((ingredientOne + " " + ingredientTwo + " " + ingredientThree + " " + ingredientFour + " " + ingredientFive + " " + ingredientSix + " " + ingredientSeven));
 
-
+    //places cocktail info on html
     document.getElementById("drink-result").innerHTML = drinkName;
     document.getElementById('ingredients').innerHTML = (measureOne + ingredientOne + " " + measureTwo + ingredientTwo + " " + measureThree + ingredientThree + " " + measureFour + ingredientFour + " " + measureFive + ingredientFive + " " + measureSix + ingredientSix + " " + measureSeven + ingredientSeven);
     document.getElementById("method").innerHTML = drinkInst;
-    // document.getElementById("drink-image").innerHTML = drinkImage;
+    document.createElement("drink-image").innerHTML = drinkImage;
+
+    
   })
 
 
