@@ -144,23 +144,5 @@ body {
     }
   }
 
-@media screen and (max-width: 992px) {
-  .hero {
-    flex-direction: column;
-  }
-  /* header {
-    background: #772014;
-  } */
-}
-
-@media screen and (max-width: 768px) {
-  .hero {
-    
-  }
-  /* header {
-    background: #8ac4ff;
-  } */
-}
-
   body {background-color: black;}
   
