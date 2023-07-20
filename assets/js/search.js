@@ -1,4 +1,5 @@
-
+var storageArray = JSON.parse(localStorage.getItem("Favourite")) || [];
+var cocktailDataObject = JSON.parse(localStorage.getItem("data"));
 
 async function getDrinkInfo(drink) { //fetches data
 
@@ -185,22 +186,23 @@ function replaceDrink() {
   }
 }
 
-$("#favorites").on('click', function () {
+
+$("#favorite").on('click', function () {
   // Validation to stop the user adding multiples of the same cocktail
   if (!storageArray.includes(cocktailDataObject[0].name)) {
       // Pushes current cocktail to empty array (storageArray)
       storageArray.push(cocktailDataObject[0].name);
       //Sets index of storage array to memory
-      localStorage.setItem("Favorites", JSON.stringify(storageArray));
+      localStorage.setItem("Favourite", JSON.stringify(storageArray));
       //Appends to page
-      $("#favorite-cocktails").append(`<li>${cocktailDataObject[0].name}</li>`);
+      $("#favorite").append(`<li>${cocktailDataObject[0].name}</li>`);
   } else {
       console.log("You already have this saved");
   };
 });
 
-// Button to clear all favorites
+// Button to clear all favourites
 $("#delete-favorites").on('click', function () {
-  localStorage.removeItem("Favourites");
+  localStorage.removeItem("Favourite");
   location.reload();
 });

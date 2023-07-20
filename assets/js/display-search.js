@@ -79,30 +79,34 @@ fetch(requestUrl)
       }
     };
 
-$("#add-to-favourites").on('click', function () {
-      // Validation to stop the user adding multiples of the same cocktail
-      if (!storageArray.includes(cocktailDataObject[0].name)) {
-          // Pushes current cocktail to empty array (storageArray)
-          storageArray.push(cocktailDataObject[0].name);
-          //Sets index of storage array to memory
-          localStorage.setItem("Favourites", JSON.stringify(storageArray));
-          //Appends to page
-          $("#favourite-cocktails").append(`<li>${cocktailDataObject[0].name}</li>`);
-      } else {
-          console.log("You already have this saved");
-      };
-});
-
-// Button to clear all favourites
-  $("#delete-favourites").on('click', function () {
-    localStorage.removeItem("Favourites");
-    location.reload();
-  });
+  
 
 
 fetchButton.addEventListener('click', fetch(requestUrl));
 
+var storageArray = JSON.parse(localStorage.getItem("Favourite")) || [];
+var cocktailDataObject = JSON.parse(localStorage.getItem("data"));
 
+
+$("#favorite").on('click', function () {
+  // Validation to stop the user adding multiples of the same cocktail
+  if (!storageArray.includes(cocktailDataObject[0].name)) {
+      // Pushes current cocktail to empty array (storageArray)
+      storageArray.push(cocktailDataObject[0].name);
+      //Sets index of storage array to memory
+      localStorage.setItem("Favourite", JSON.stringify(storageArray));
+      //Appends to page
+      $("#favorite").append(`<li>${cocktailDataObject[0].name}</li>`);
+  } else {
+      console.log("You already have this saved");
+  };
+});
+
+// Button to clear all favourites
+$("#delete-favorites").on('click', function () {
+  localStorage.removeItem("Favourite");
+  location.reload();
+});
 
 
 
