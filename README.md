@@ -38,8 +38,9 @@ Takes two numbers and returns the sum.
 
 ## Authors
 
-- [Andrew Erickson] (https://github.com/Tiny-Tigers)
-- [Beth Haynes]  (https://github.com/beffylaureen)
+* [Andrew Erickson] (https://github.com/Tiny-Tigers)
+* [Beth Haynes]  (https://github.com/beffylaureen)
+* [Jon Armajani] (https://github.com/JJumangi) 
 
 
 
