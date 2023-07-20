@@ -135,8 +135,6 @@ cursor: pointer;
 }.text-primary{
     display: flexbox;
     align-items: center;
-  
-    /*background-color: #208dd7;*/
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -146,9 +144,7 @@ body {
     background-color: black;
     color: white;
   }
-  .header{
-    .header-content
-  }
+
   .section {
     position: relative;
     width: 100vw;
