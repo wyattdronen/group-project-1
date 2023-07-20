@@ -75,6 +75,39 @@ body {
   background-color: #20d7c6;
   border: 1px solid black;
 }
+
+#add-to-favorites {
+  background-color: #208dd7;
+  color: white;
+  border: 1px solid black;
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+#add-to-favorites:hover{
+  background-color: #20d7c6;
+  border: 1px solid black;
+}
+
+#delete-favorites {
+  background-color: #208dd7;
+  color: white;
+  border: 1px solid black;
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+#delete-favorites:hover{
+  background-color: #20d7c6;
+  border: 1px solid black;
+}
+
 .custom-select{
   position:relative;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -157,7 +190,7 @@ body {
     justify-content: left;
     align-items: left;
   }
-  .hero::before {
+  /*.hero::before {
     content: "";
     position: absolute;
     top: 0;
@@ -169,36 +202,36 @@ body {
     background-size: cover;
     background-position: center center;
     filter: brightness(85%);
-  }
+  }*/
   
   
-  .hero {
+  /*.hero {
     position: relative;
     width: 100vw;
     height: 100vh;
     display:flex;
     justify-content: left;
     align-items: left;
-  }
-  .hero-content {
+  }*/
+  /*.hero-content {
     position: relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     text-align: left;
     margin: 1.625rem;
-  }
-  .hero.title {
+  }*/
+  /*.hero.title {
     font-size: 96px;
     font-weight: 600;
     margin-bottom: 0;
    
-  }
-  .hero-subtitle {
+  }*/
+  /*.hero-subtitle {
     font-size: 24px;
     font-weight: 200;
     margin-top: 1rem;
-  }
-  .hero-button {
+  }*/
+  /*.hero-button {
     background-color: #208dd7;
     color: white;
     border: 1px solid black;
@@ -208,17 +241,17 @@ body {
     font-size: 1.125rem;
     font-weight: 200;
     cursor: pointer;
-  }
-  .hero-button:hover{
+  }*/
+  /*.hero-button:hover{
     background-color: #20d7c6;
     border: 1px solid black;
-  }
+  }*/
 
-  .custom-select{
+  /*.custom-select{
     position:relative;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
-  .custom-select select {
+  }*/
+  /*.custom-select select {
     display: none;
   }
   .select-selected {
@@ -270,5 +303,5 @@ body {
 #home-button:hover{
   background-color: #20d7c6;
   border: 1px solid black;
-  cursor: pointer;
+  cursor: pointer;*/
 }

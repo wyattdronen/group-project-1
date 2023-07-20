@@ -30,6 +30,7 @@ body {
     background-size: cover;
     background-position: center center;
     filter: brightness(85%);
+    display: none;
   }
   
   
@@ -132,7 +133,37 @@ body {
   border: 1px solid black;
   cursor: pointer;
 }
+#add-to-favorites {
+  background-color: #208dd7;
+  color: white;
+  border: 1px solid black;
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+#add-to-favorites:hover{
+  background-color: #20d7c6;
+  border: 1px solid black;
+}
 
+#delete-favorites {
+  background-color: #208dd7;
+  color: white;
+  border: 1px solid black;
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+#delete-favorites:hover{
+  background-color: #20d7c6;
+  border: 1px solid black;
+}
 @keyframes drop-in {
     /* header drops in to place */
     from {
