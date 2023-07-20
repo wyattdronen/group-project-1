@@ -84,9 +84,43 @@ body {
   border: 1px solid black;
 }
 
-.custom-select {
-  position: relative;
+
+#add-to-favorites {
+  background-color: #208dd7;
+  color: white;
+  border: 1px solid black;
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+#add-to-favorites:hover{
+  background-color: #20d7c6;
+  border: 1px solid black;
+}
+
+#delete-favorites {
+  background-color: #208dd7;
+  color: white;
+  border: 1px solid black;
+  margin-top: 5rem;
+  padding: 0.9375rem 1.875rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+#delete-favorites:hover{
+  background-color: #20d7c6;
+  border: 1px solid black;
+}
+
+.custom-select{
+  position:relative;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 .custom-select select {
@@ -165,6 +199,7 @@ body {
 }
 
 body {
+
   margin: 0;
   padding: 0;
   background-color: black;
@@ -289,6 +324,7 @@ body {
   z-index: 99;
 }
 
+
 .select-hide {
   display: none;
 }
@@ -310,5 +346,5 @@ body {
 #home-button:hover {
   background-color: #20d7c6;
   border: 1px solid black;
-  cursor: pointer;
+  cursor: pointer;*/
 }
