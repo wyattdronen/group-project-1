@@ -145,17 +145,16 @@ body {
     }
   }
 
-/* Cards are split into two columns at 992px or smaller */
 @media screen and (max-width: 992px) {
-  .card {
-    width: 50%;
+  .hero {
+    display: flex
+    flex-direction: column;
   }
   /* header {
     background: #772014;
   } */
 }
 
-/* Cards are stacked on top of each other at 768px or smaller */
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
