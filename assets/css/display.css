@@ -2,12 +2,16 @@
     display: flexbox;
     align-items: center;
     color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
+    color: white;
   }
-  .hero {
+
+  .section {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -27,7 +31,6 @@ body {
     background-size: cover;
     background-position: center center;
     filter: brightness(85%);
-    display: none;
   }
   
   
@@ -46,11 +49,9 @@ body {
     text-align: left;
     margin: 1.625rem;
   }
-  .hero-title {
-    font-family: 'Limelight', cursive;
-    font-variant: small-caps;
+  .hero.title {
     font-size: 96px;
-    font-weight: 200;
+    font-weight: 600;
     margin-bottom: 0;
    
   }
@@ -74,6 +75,7 @@ body {
     background-color: #20d7c6;
     border: 1px solid black;
   }
+
   .custom-select{
     position:relative;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -113,67 +115,3 @@ body {
     right: 0;
     z-index: 99;
   }
-.select-hide {
-  display: none;
-}
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-
-}
-#home-button{
-  background-color: #208dd7;
-  color:white;
-  border:1px solid black;
-  position: fixed;
-  bottom: 30px;
-}
-#home-button:hover{
-  background-color: #20d7c6;
-  border: 1px solid black;
-  cursor: pointer;
-}
-.btn custom-btn {
-  background-color: #208dd7;
-  color: white;
-  border: 1px solid black;
-  margin-top: 5rem;
-  padding: 0.9375rem 1.875rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 200;
-  cursor: pointer;
-}
-.btn custom-btn:hover{
-  background-color: #20d7c6;
-  border: 1px solid black;
-}
-
-#delete-favorites {
-  background-color: #208dd7;
-  color: white;
-  border: 1px solid black;
-  margin-top: 5rem;
-  padding: 0.9375rem 1.875rem;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.125rem;
-  font-weight: 200;
-  cursor: pointer;
-}
-#delete-favorites:hover{
-  background-color: #20d7c6;
-  border: 1px solid black;
-}
-@keyframes drop-in {
-    /* header drops in to place */
-    from {
-      margin-bottom: 100%;
-      width: auto; 
-    }
-    to {
-      margin-bottom: 0%;
-      width: auto;
-    }
-  }
-
-  body {background-color: black;}
-  
