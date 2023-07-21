@@ -40,6 +40,8 @@ Takes two numbers and returns the sum.
 
 - [Andrew Erickson] (https://github.com/Tiny-Tigers)
 - [Beth Haynes]  (https://github.com/beffylaureen)
+- [Wyatt Dronen]  (https://github.com/wyattdronen)
+- [Jon Armajani]  (https://github.com/JJumangi)
 
 
 
@@ -51,20 +53,26 @@ Insert gif or link to demo
 
 ## Deployment
 
-To deploy this project run
 
-```bash
-  npm run deploy
-```
+[link to app] (https://wyattdronen.github.io/group-project-1/)
+
 
 
 ## Screenshots
+index
+![Alt text](./assets/images/home.jpg?raw=true "screenshot")
+search
+![Alt text](./assets/images/search.jpg?raw=true "screenshot")
+search-display
+![Alt text](./assets/images/random.jpg?raw=true "screenshot")
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Resources Used
 
 A palette generator was used to extract the hex values of the main colors in the hero image.  At the time of this writing the particular palette generator used showed up as a non-secured website so the web address will not be included in this documentation.  After the hex values were retrieved, colorhexa.com was used to retrieve the hex values of the complementary colors of the main colors.  The complementary colors were used in the styling.
 
 Background hero image is from Shutterstock.
+
+
+Two API's were used to have 2 options. One being a random cocktail generator and the other a search input generator.
 
